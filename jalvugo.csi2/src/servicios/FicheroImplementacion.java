@@ -16,7 +16,7 @@ public class FicheroImplementacion implements FicheroInterfaz {
 	public void escribirEnFicheroLog(String texto) {
 		
 		try {
-			FileWriter escritor = new FileWriter(Inicio.rutaFicheroLog);
+			FileWriter escritor = new FileWriter(Inicio.rutaFicheroLog,true);
 			
 			escritor.write(texto);
 			escritor.close();
